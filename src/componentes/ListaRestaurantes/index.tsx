@@ -68,6 +68,7 @@ const ListaRestaurantes = () => {
   useEffect(() => {
     // obter restaurantes
     carregarDados('http://localhost:8000/api/v1/restaurantes/');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
