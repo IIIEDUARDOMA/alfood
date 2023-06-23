@@ -1,21 +1,51 @@
 .ListaRestaurantes {
   margin-top: 1.5rem;
   padding: 2rem;
-  
-    &__botao{
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      color: #000;
-      background-color: #f2f6ff;
-      padding: 1rem;
-      margin-top: 1rem;
-      font-size: 14px;
-      font-weight: 600;
-    }
 
-    &__botao:hover{
-      background-color: #d3dffb;
-      color: #2e2c2c;
+  &__botao {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    background-color: #f2f6ff;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+
+  &__botao:hover {
+    background-color: #d3dffb;
+    color: #2e2c2c;
+  }
+}
+
+.ListaRestaurantes__form {
+  & input {
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #b9c3d9;
+    border-radius: 1rem;
+    background-color: #f2f6ff;
+    outline: transparent;
+  }
+
+  &__label {
+    display: flex;
+    width: 150px;
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+
+    & select {
+      padding: 0.3rem;
+      border: 1px solid #b9c3d9;
+      border-radius: 1rem;
+      background-color: #f2f6ff;
+      text-align: center;
+      outline: transparent;
     }
+  }
 }
